@@ -2,6 +2,7 @@ use crate::domain::value_object::IdNumber;
 
 #[derive(Debug)]
 pub struct Human {
+    #[allow(dead_code)] // 使用されていない関数が存在すると出る警告を無視させる
     id: IdNumber,
     pub name: String,
     pub age: i32,
